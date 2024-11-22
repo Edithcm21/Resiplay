@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    /* --azul:#31869A; */
+     --azul:#31869A; 
+     --azul2: #0C404D;
+    --gris: #5E5C5C;
+    --rojo: #B72223;
+    --negro:#000000;
+    --cafe:#96785B;
+    --biryani:font-family: 'Berlin Sans FB', sans-serif;
+  
+}
+.btn-modal{
+    width: 40%;
+}
+
+.btn-white {
+    background-color: var(--negro);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+.btn-white .btn-2{
+    background-color: white;
+    color: black;
+
+}
+
+.btn-white:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+    color:white /* Cambia el color de la letra a azul */
+    /* background-color: #f0f0f0; Ligera variación del fondo para el efecto hover */
+     /* Cambia el color del borde a azul */
+}
+
+.btn-largo{
+    width: 80%;
+    height: 38px;
+    align-items: center;
+    padding: 0 !important;
+}
+.btn-blue{
+    background-color: var(--rojo) ;/* Color azul */
+    color: white;
+    border: 2px solid var(--rojo); /* Borde del mismo color que el fondo */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-blue:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+    /* background-color: #138496; Cambia a un azul ligeramente más oscuro al pasar el mouse */
+    /* border-color: #138496; Cambia el color del borde a un azul más oscuro */
+}
+
+.h1{
+    
+font-family: 'Montserrat', sans-serif; 
+}
+
+.text-blue{
+color: var(--azul);
+}
+.text-blue2{
+color: var(--azul2);
+}
+.text-rojo{
+    color: var(--rojo);
+}
+
+.titulo{
+    font-size: 6rem;
+}
+.text-justify {
+    text-align: justify;
+}
+
+  .text-muted {
+    color: #B72223;
+    font-size: 18px;
+  }
+
+.resaltado{
+    color: var(--azul);
+    font-size: 19px;
+}
+  
+.info-window{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+    max-width: 250px;
+}
+
+.info-window .title{
+    color: var(--azul2);
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.info-window .details{
+    text-align: start;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.info .buttons{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-mostrarmas{
+    background-color: var(--rojo) ;
+    color: white;
+    border: 1px solid var(--rojo); 
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.btn-mostrarmas:hover{
+    border: var(--gris);
+    transform: scale(1);
+    background-color: var(--gris);
+}
+
+.accordion-button{
+    color: white !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 2;
+}
+
+
+.accordion-button:focus {
+    color: white !important;
+    box-shadow: none; 
+}
+.accordion-button.collapsed::after{
+    color: white !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/* Estilo cuando el acordeón está expandido */
+.accordion-button:not(.collapsed)::after {
+    color: white !important;
+    background-image: var(--bs-accordion-btn-active-icon);
+    outline: none;
+    border: none;
+    box-shadow: none;
+
+}
+
+/* Eliminar cualquier color azul en enlaces o texto al hacer clic */
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+

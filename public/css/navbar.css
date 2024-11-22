@@ -1,0 +1,232 @@
+:root{
+  /* --azul:#31869A; */
+   --azul:#31869A; 
+   --azul2: #0C404D;
+  --gris: #5E5C5C;
+  --cafe:#96785B;
+  --blanco: #f1f1f1;
+  /* --rojo: #B72223;  */
+  --negro:#000000;
+  --rojo:#ac0e28;
+/*     
+  --celeste:#6B99C3;
+  --cafe2: #65483D;
+  --gris: #9E8279;
+  --gris2: #564C55; */ 
+  --biryani:font-family: 'Berlin Sans FB', sans-serif;
+}
+.navbar_inicio{
+    min-height: 80px;
+    font-family: "Cera Pro", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1050; 
+  }
+  .navbar_inicio a:hover{
+    font-size: 16px;
+  }
+  .navbar-dark1{
+    text-transform: uppercase;
+    z-index: 1050; 
+    font-size: 14px;
+    border-bottom: 1px solid white;
+    background-color: var(--negro);
+    color: rgb(251, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  .navbar-dark1 .nav-link{
+    color: rgb(251, 250, 250) !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-right: 20px;
+    margin-right: 25px;
+    padding-left: 20px;
+  }
+
+  .navbar-dark1 .nav-link:hover{
+    color: var(--rojo);
+  }
+
+  .navbar-nav{
+    margin-left: auto;
+  }
+  .navbar-dark1 .nav-link.active{
+    color: white;
+    font-weight: bold;
+  }
+  /* Ajuste del color del ícono del botón hamburguesa */
+.navbar-dark1 .navbar-toggler {
+  border-color: rgb(250, 244, 244); /* Color del borde del botón */
+}
+
+.navbar-dark1 .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(250, 244, 244)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Cambia el valor `stroke` a cualquier color que prefieras */
+}
+
+  .navbar_inicio2{
+    min-height: 80px;
+    font-family: "Cera Pro", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1050; 
+  }
+
+  
+.navbar_admin{
+  background-color: black;
+  
+}
+
+.navbar_admin .active{
+  color: white; 
+
+}
+/* Estilo para el enlace activo */
+  a.nav-link.active {
+  font-weight: bold;
+  color: white;
+}
+/* .nav-item{
+  color: white !important;
+}
+.nav-link{
+  color: white;
+
+} */
+ .dropdown-menu{
+  background-color: var(--negro);
+  color: white;
+  border: 0;
+}
+ .dropdown-menu a:hover{
+  color: var(--negro);
+  border: 0;
+  background-color: white;
+}
+.dropdown-item{
+  color: white ;
+}
+
+.user-circle {
+  width: 30px;               /* Ajusta según el tamaño que necesites */
+  height: 30px;
+  background-color: var(--rojo);     /* Cambia el color según tus necesidades */
+  color: white;               /* Color de la letra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;         /* Esto hace que el div sea redondo */
+  font-size: 20px;            /*Tamaño de la letra*/
+  font-weight: bold;          /* Negrita para la letra */
+  text-transform: uppercase;  /* Asegura que la letra esté en mayúscula */
+  margin: auto;
+}
+
+
+.navbar-light {
+    background-color: white !important; /* Fondo blanco para el navbar-light */
+    color: var(--negro)!important; /* Color de texto personalizado */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--negro) !important; /* Asegura que el color de los enlaces se aplique */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--negro) !important; /* Color para el enlace activo */
+}
+
+.navbar-dark{
+  color: var(--negro);
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: bold;
+  color: var(--negro); 
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--negro);
+
+}
+
+
+.menu .dropdown-menu{
+  background-color: var(--rojo);
+  color: white;
+  border: 0;
+    font-family: "Cera Pro", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1050; 
+  
+}
+.menu .dropdown-menu a:hover{
+  color: var(--negro);
+  background-color: white;
+  border: 0;
+    font-family: "Cera Pro", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1050; 
+}
+.menu .dropdown-item{
+  color: white ;
+}
+/*************************************************/
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+.buttons .btn-red{
+  background-color: var(--rojo);
+  color: white;
+  margin-left: 10px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.buttons .btn-gray{
+  background-color: var(--gris);
+  color: white;
+  margin-left: 10px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.espaciado{
+  height: 100px;
+}
+
+.navbar-top{
+  position: fixed;
+  min-height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}

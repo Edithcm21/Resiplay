@@ -1,0 +1,83 @@
+.effect-container {
+    margin-bottom: 50px;
+}
+
+/* Fade-In Effect */
+.fade-in-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in-text.show {
+    opacity: 1;
+}
+
+/* Slide-In from Left Effect */
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.slide-in-left.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Zoom-In Effect */
+.zoom-in {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.zoom-in.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Rotate-In Effect */
+.rotate-in {
+    transform: rotate(-360deg);
+    opacity: 0;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.rotate-in.show {
+    transform: rotate(0);
+    opacity: 1;
+}
+
+/* Bounce-In Effect */
+.bounce-in {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.bounce-in.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.imagen-con-sombra {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+ /* Fade-In Effect */
+ .imagen-fade-in {
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 2s ease-out; /* Efecto de desvanecimiento */
+}
+
+.imagen-fade-in.show {
+    opacity: 1; /* Se hace visible */
+}
+.vertical-text {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    white-space: nowrap; 
+}
+
