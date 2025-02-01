@@ -62,9 +62,9 @@
                     <input type="text" readonly class="form-control text-center alert {{ $muestreo->autorizado == 1 ? 'alert-success' : 'alert-secondary' }}" id="autorizado" value="{{$autorizado}}" >
                 </div>
             </div>
-            <div class="row centrarh">
-                <div class="col-8 mt-4 ">
-                    <table class="table table-striped table-responsive border">
+            <div class="row mx-auto">
+                <div class="col-8 mt-4 table-responsive">
+                    <table class="table table-striped  border">
                         <thead>
                             <tr >
                                 <th>Clasificacion</th>

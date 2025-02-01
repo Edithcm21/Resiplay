@@ -10,6 +10,7 @@ use App\Models\muestreo;
 use App\Models\Municipio; // Importa el modelo Municipio
 use App\Models\Playa;
 use App\Models\tipo_residuo;
+use App\Models\vista;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -29,8 +30,17 @@ class IndexController extends Controller
         ->where('muestreos.autorizado','1')
         ->groupBy( 'id_playa','nombre_playa','latitud','longitud','nombre_municipio','nombre_estado')
         ->get();
-        return view('welcome', compact('puntos'));
+        $views= vista::findOrFail(1);
+        $views->views= $views->views+1;
+        $views->save();
+        return view('welcome', compact('puntos','views'));
       
+    }
+
+    public function mostrar_vistas( $id){
+        $vistas= vista::findOrFail($id);
+    return response()->json(['vistas' => $vistas->views]);
+
     }
     public function getMuestreo($id_playa){
         $muestreos=muestreo::where('fk_playa',$id_playa)
@@ -60,11 +70,16 @@ class IndexController extends Controller
             'num_muestreo' => $num_muestreo,
             'zonas'=>$zona
         ]);
-
-
     }
+
+    
     public function showResultados( $id){
-        $playas= Playa::all();
+        $playas= DB::table('muestreos')
+        ->select('id_playa','nombre_playa')
+        ->join('playas', 'playas.id_playa', '=', 'muestreos.fk_playa')
+        ->where('muestreos.autorizado','1')
+        ->groupBy( 'id_playa','nombre_playa')
+        ->get();
 
         $hallazgos = DB::table('hallazgos')
         ->select('id_muestreo', 'id_tipo','cantidad', 'porcentaje')
@@ -74,7 +89,7 @@ class IndexController extends Controller
         ->where('id_playa',$id)
         ->where('muestreos.autorizado','1')
         ->get();
-        $muestreos =muestreo::where('fk_playa', $id)->where('muestreos.autorizado','1')->get();
+        $muestreos =muestreo::where('fk_playa', $id)->where('muestreos.autorizado','1')->orderBy('fk_playa')->orderBy('num_muestreo')->get();
         $residuos= tipo_residuo::all();
         $clasificaciones=Clasificacion::all();
         $num_muestreos= DB::table('muestreos')
@@ -91,7 +106,13 @@ class IndexController extends Controller
         $num_muestreo = $request->muestreo;
         $id_zona = $request->zona;
 
-        $playas= Playa::all();
+        $playas= DB::table('muestreos')
+        ->select('id_playa','nombre_playa')
+        ->join('playas', 'playas.id_playa', '=', 'muestreos.fk_playa')
+        ->where('muestreos.autorizado','1')
+        ->groupBy( 'id_playa','nombre_playa')
+        ->get();
+
         $hallazgos = DB::table('hallazgos')
         ->select('id_muestreo', 'id_tipo',  'cantidad', 'porcentaje')
         ->join('muestreos', 'fk_muestreo', '=', 'id_muestreo')
@@ -118,7 +139,10 @@ class IndexController extends Controller
             $muestreos->where('zona',$id_zona);
         }
         $muestreos->where('muestreos.autorizado','1');
-        $muestreos->orderBy('fk_playa'); 
+    
+        $muestreos->orderBy('fk_playa');
+        $muestreos->orderBy('num_muestreo');
+
         $muestreos = $muestreos->get();
         $residuos= tipo_residuo::query();
         if($id_clasificacion > 0){
@@ -142,7 +166,6 @@ class IndexController extends Controller
         }
         
     return view('consultas',compact('playas','hallazgos','muestreos','residuos','clasificaciones','num_muestreos','zonas'));
-
     }
   
 }

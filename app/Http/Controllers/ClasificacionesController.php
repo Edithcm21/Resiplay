@@ -13,7 +13,7 @@ class ClasificacionesController extends Controller
 
     public function index()
     { 
-        $clasificaciones=Clasificacion::paginate(6);
+        $clasificaciones=Clasificacion::all();
          return Auth::user()->rol=='admin'
          ? view('views_admin.clasificacion_residuos',compact('clasificaciones'))
          : view('views_capturista.clasificacion_residuos',compact('clasificaciones'));

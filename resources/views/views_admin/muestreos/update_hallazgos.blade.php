@@ -60,6 +60,7 @@
                                 <label  class="form-label">Día:</label>
                                 <select class="form-select" aria-label="Default select example" name="dia"  required>
                                     <option  >Selecciona día</option>
+                                    <option value="viernes" {{$muestreo->dia=='viernes'?'selected':''}}>viernes</option>
                                     <option value="sabado" {{$muestreo->dia=='sabado'?'selected':''}}>sabado</option>
                                     <option value="domingo" {{$muestreo->dia=='domingo'?'selected':''}}>domingo</option>
                                 </select>

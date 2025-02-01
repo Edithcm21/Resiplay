@@ -85,6 +85,15 @@
   color: white; 
 
 }
+.navbar_capturista{
+  background-color: black;
+  
+}
+
+.navbar_capturista .active{
+  color: white; 
+
+}
 /* Estilo para el enlace activo */
   a.nav-link.active {
   font-weight: bold;
@@ -141,15 +150,15 @@
 }
 
 .navbar-dark{
-  color: var(--negro);
+  color: var(--blanco);
 }
 .navbar-dark .navbar-nav .nav-link {
   font-weight: bold;
-  color: var(--negro); 
+  color: var(--blanco); 
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: var(--negro);
+  color: var(--blanco);
 
 }
 
@@ -178,15 +187,30 @@
 }
 /*************************************************/
 .header-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
-.buttons .btn-red{
+
+.btn-red{
   background-color: var(--rojo);
+  color: white;
+  margin-left: 10px;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.btn-red:hover{
+  background-color: var(--negro);
+  color: white;
+  cursor: pointer;
+
+}
+
+.btn-gray{
+
+  background-color: var(--gris);
   color: white;
   margin-left: 10px;
   border: none;
@@ -196,8 +220,9 @@
 
 }
 
-.buttons .btn-gray{
-  background-color: var(--gris);
+.btn-gray:hover{
+
+  background-color: var(--rojo);
   color: white;
   margin-left: 10px;
   border: none;

@@ -13,7 +13,7 @@ class PlayasController extends Controller
 {
     public function index()
     { 
-        $playas= Playa::orderBy('nombre_playa','asc')->paginate(6);
+        $playas= Playa::orderBy('nombre_playa','asc')->get();
         $municipios=Municipio::orderBy('nombre_municipio')->get();
         $regiones=Region::orderBy('nombre_region')->get();
 

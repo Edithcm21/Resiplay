@@ -66,8 +66,8 @@
                 </div>
             </div>
             <div class="row centrarh">
-                <div class="col-8 mt-4 ">
-                    <table class="table table-striped table-responsive border">
+                <div class="col-sm-8 mt-4 table-responsive">
+                    <table class="table table-striped  border">
                         <thead>
                             <tr >
                                 <th>Clasificacion</th>
@@ -94,10 +94,13 @@
                                             <td rowspan="{{$total}}">{{$clasificacion->nombre_clasificacion}} </td>
                                             @php 
                                                 $first = false; 
-                                                $totalC +=$hallazgo->cantidad;
-                                                $totalP +=$hallazgo->porcentaje
+                                                
                                             @endphp 
                                         @endif
+                                        @php
+                                            $totalC +=$hallazgo->cantidad;
+                                            $totalP +=$hallazgo->porcentaje;
+                                        @endphp
                                             <td>{{$hallazgo->nombre_tipo}}</td>
                                             <td>{{$hallazgo->cantidad}}</td>
                                             <td>{{$hallazgo->porcentaje}}</td>

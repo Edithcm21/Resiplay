@@ -11,7 +11,7 @@
   <div class="container-fluid " style="min-height: 80vh ; ">
     <div class="row justify-content-center align-items-center">
       <div class="filters col-sm-10 m-4">
-        
+        <h3 class="">Filtrar registros</h3>
         <form class="row " method="POST" action="{{route('consulta.filtro')}}"  >
           @csrf
           <div class="col-sm-2 m-1 p-1 ">
@@ -69,6 +69,8 @@
         <table class="table table-striped  table-hover border text-center">
           <thead>
             <tr class=" text-center border ">
+              <th   style=" max-width: 30px ; " scope="col text-center border " class="col text-center border vertical-text" rowspan="5">Clasificacion</th>
+
               <th   style="min-width: 300px; max-width: 300px ; " scope="col text-center border " class="col text-center border" rowspan="5">Residuo</th>
             </tr>
             <tr class="border">
@@ -91,12 +93,12 @@
             
             <tr class="border">
               @foreach ($muestreos as $muestreo )
-              <th class="border" colspan="2">{{$muestreo->anio}} {{$muestreo->dia}} <br>{{$muestreo->zona}}</th>
+              <th class="border " colspan="2">día: {{$muestreo->dia}}<br> año: {{$muestreo->anio}}  <br>zona: {{$muestreo->zona}}</th>
               @endforeach
             </tr>
             <tr class="border">
               @foreach ($muestreos as $muestreo )
-              <th class="border" colspan="2"># de muestreo {{$muestreo->num_muestreo}}</th>
+              <th class="border" colspan="2"># de muestreo: {{$muestreo->num_muestreo}}</th>
               @endforeach
             </tr>
             <tr class="border">
@@ -113,15 +115,21 @@
               $totalResiduos = $residuoFiltrado->count();
               $contador = 0
             @endphp
+            @if ($totalResiduos>0)
+            <tr >
+              <td class="vertical-text" style="max-width: 20px" rowspan="{{$totalResiduos+1}}">{{$clasificacion->nombre_clasificacion}}</td>
+            </tr>
+            @endif
+            
+
             @foreach ($residuoFiltrado  as   $residuo )
             @php
                 // Verifica si es la última fila de la clasificación
                 $contador++; // Incrementa el contador en cada iteración
-                $ultimaFila = ($contador === $totalResiduos);
+                $ultimaFila = ($contador == $totalResiduos);
                
             @endphp
             <tr style="{{ $ultimaFila ? 'border-bottom: 2px solid black;' : '' }}">
-              
               <td class="text-start" style=" position: sticky; border-right: 2px solid black; min-width: 300px; max-width: 300px ; " >{{$residuo->nombre_tipo}}</td>
                   
               {{-- <td class="text-start" style="background-color: {{$clasificacion->color}} ; position: sticky;">{{$residuo->nombre_tipo}}</td> --}}
@@ -155,6 +163,7 @@
             @endforeach
             @endforeach
             <tr>
+              <td></td>
               <td style="position: sticky;">Total</td>
               @foreach ($totales as $total)
               <td><strong>{{ $total }}</strong></td>

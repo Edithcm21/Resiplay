@@ -272,6 +272,13 @@ footer {
     font-size: 12px;
 }
 
+.vertical-text {
+    writing-mode: vertical-lr; /* Rotar el texto verticalmente */
+    transform: rotate(180deg); /* Ajustar orientación si es necesario */
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 .inputC{
     width: 80%;
@@ -291,9 +298,11 @@ footer {
     margin-top: 10px;
 }
 .team-description {
-    max-width: 600px;
-    margin: 20px auto;
+    /* max-width: 600px; */
+    margin: 30px auto;
+    font-weight: 460;
     font-size: 1rem;
+    font-family: "Cera Pro", Sans-serif;
     color: var(--blanco);
 }
 
@@ -302,7 +311,7 @@ footer {
 .integrante-card img{
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit: cover;
     margin-bottom: 15px;
     padding: 2px;
@@ -337,12 +346,12 @@ footer {
   }
   .integrante-card .mas{
     text-decoration: none;
-    color: var(--gris);
-    font-size: 1rem;
+    color: var(--negro);
+    font-size: 1.01rem;
     font-weight: bold;
   }
   .mas:hover{
-    font-size: 1.02rem;
+    font-size: 1.03rem;
   }
 
   .text-red{
@@ -399,3 +408,35 @@ footer {
 .card-gris .accordion-button{
     color: black !important;
 }
+
+.contador {
+  display: flex; /* Hace que los elementos dentro sean flexibles */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 10px; /* Espaciado entre el icono y el contador */
+  font-size: 20px; /* Tamaño del texto */
+  background: linear-gradient(to bottom, #666666, #000000); /* Fondo degradado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más elegante */
+  color: #ffffff; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+margin-bottom: 5px;
+    padding-top: 0px;
+    height: 40px;
+}
+
+#contador {
+  display: inline-flex; /* Permite controlar los dígitos como casillas */
+  /* Espaciado entre los números individuales */
+  padding: 10px; /* Espaciado interno dentro de toda la casilla */
+  font-weight: bold;
+  letter-spacing: 5px; /* Espaciado adicional entre los dígitos */
+}
+.contador i {
+    margin-left: 10px; /* Agrega espacio adicional a la izquierda del icono */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+   
+  }

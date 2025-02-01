@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 //Cambio de color del navbar al hacer scroll 
-window.addEventListener('scroll', function() {
-  const navbar1 = document.getElementById('navbar1');
+// window.addEventListener('scroll', function() {
+//   const navbar1 = document.getElementById('navbar1');
   // const btn=this.document.getElementById('navbutton1');
   // if (navbar && btn) {
 
@@ -68,26 +68,26 @@ window.addEventListener('scroll', function() {
   //     btn.classList.add('btn-white')
   //   }
   // }
-  const navbar3 = document.getElementById('navbar3');
-  // const btn=this.document.getElementById('navbutton1');
-  if (navbar3 && navbar1) {
-    if (window.scrollY > 80) {
-      // Mostrar navbar1 y ocultar navbar3
-      navbar3.classList.remove('navbar-visible');
-      navbar3.classList.add('navbar-hidden');
+//   const navbar3 = document.getElementById('navbar3');
+//   // const btn=this.document.getElementById('navbutton1');
+//   if (navbar3 && navbar1) {
+//     if (window.scrollY > 80) {
+//       // Mostrar navbar1 y ocultar navbar3
+//       navbar3.classList.remove('navbar-visible');
+//       navbar3.classList.add('navbar-hidden');
 
-      navbar1.classList.remove('navbar-hidden');
-      navbar1.classList.add('navbar-visible');
-    } else {
-      // Mostrar navbar3 y ocultar navbar1
-      navbar1.classList.remove('navbar-visible');
-      navbar1.classList.add('navbar-hidden');
+//       navbar1.classList.remove('navbar-hidden');
+//       navbar1.classList.add('navbar-visible');
+//     } else {
+//       // Mostrar navbar3 y ocultar navbar1
+//       navbar1.classList.remove('navbar-visible');
+//       navbar1.classList.add('navbar-hidden');
 
-      navbar3.classList.remove('navbar-hidden');
-      navbar3.classList.add('navbar-visible');
-    }
-  }
-});
+//       navbar3.classList.remove('navbar-hidden');
+//       navbar3.classList.add('navbar-visible');
+//     }
+//   }
+// });
 
 
 
@@ -145,4 +145,21 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
+document.addEventListener('DOMContentLoaded',function(){
+  fetch('/vistas/1',{
+    method: 'GET',
+    headers:{
+      'Accept': 'application/json'
+     
+    }
+  })
+  .then(response=>response.json())
+  .then(data=>{
+    console.log('Vistas recibidas', data.vistas);
+    document.getElementById('contador').textContent= data.vistas;
 
+  })
+  .catch(error=>{
+    console.error('Error al mostrar el número de vistas',error);
+  });
+});

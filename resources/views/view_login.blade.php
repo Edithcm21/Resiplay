@@ -8,8 +8,8 @@
 
 @section('content')
 <div  class=" gradient-form login" style="background-color: #eee;">
-    <div class="container-fluid row p-4 pb-0">
-        <div class="col-2" >
+    <div class="container-fluid row p-4 pb-1">
+        <div class="col-12 col-sm-2 " >
             <a href="/" class="btn btn-dark" style="width: 100%">
                 <i class="bi bi-arrow-left"></i> Inicio
             </a>

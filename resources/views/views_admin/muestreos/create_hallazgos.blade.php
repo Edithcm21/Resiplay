@@ -61,8 +61,10 @@
                                 <label  class="form-label">Día:</label>
                                 <select class="form-select" aria-label="Default select example" name="dia"  required>
                                     <option  >Selecciona día</option>
+                                    <option value="viernes">viernes</option>
                                     <option value="sabado">sabado</option>
                                     <option value="domingo">domingo</option>
+                                    
                                 </select>
                             </div>
                             <div class=" col-sm-3 mb-3 ">

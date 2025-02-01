@@ -44,8 +44,8 @@
                                 <th>Playa</th>
                                 <th>Region</th>
                                 <th>Municipio</th>
-                                <th>Latitud</th>
-                                <th>Longitud</th>
+                                {{-- <th>Latitud</th>
+                                <th>Longitud</th> --}}
                                 <th>N° de muestreo</th>
                                 <th>Zona</th>
                                 <th>Fecha/año</th>
@@ -59,8 +59,8 @@
                                 <td>{{$muestreo->playa->nombre_playa}}</td>
                                 <td>{{$muestreo->playa->region->nombre_region}}</td>
                                 <td>{{$muestreo->playa->municipio->nombre_municipio}}</td>
-                                <td>{{$muestreo->playa->latitud}}</td>
-                                <td>{{$muestreo->playa->longitud}}</td>
+                                {{-- <td>{{$muestreo->playa->latitud}}</td>
+                                <td>{{$muestreo->playa->longitud}}</td> --}}
                                 <td>{{$muestreo->num_muestreo}}</td>
                                 <td>{{$muestreo->zona}}</td>
                                 <td>{{$muestreo->fecha}}</td>

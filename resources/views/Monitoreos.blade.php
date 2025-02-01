@@ -14,11 +14,10 @@
     <div class=" col-sm-11 mx-auto ">
         <br><br>
         <div class="row">
+            <h1 class="fw-bold p-5">MONITOREO DE <strong class="text-red">RESIDUOS SOLIDOS EN PLAYAS</strong> </h1>
+
            <div class="col-md-6 ">
-                <br><br>
-                <h3 class="fw-bold ">MONITOREO DE <strong class="text-red">RESIDUOS SOLIDOS EN PLAYAS</strong> </h3>
-                <br>
-                <p class=" text-justify">
+                <p class=" text-justify espacio">
                     La presencia de residuos sólidos en playas es un problema que afecta la capacidad de las
                     mismas para brindar servicios ambientales, servir como base para el desarrollo de
                     actividades turísticas y contribuir al bienestar de los pobladores que viven en su cercanía.
@@ -308,9 +307,9 @@
         <div class="referencias">
             <h2 style="color: #333;">Referencias</h2>
             <ul style="line-height: 1.6; padding-left: 20px;">
-                <li>Braskem Idesa, <em>Monitoreo y manejo de residuos en playas</em>. 2020. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
-                <li>SEMARNAT, <em>¿A dónde van los desechos que terminan en las playas y mares?</em>. 2020. https://www.gob.mx/semarnat/articulos/a-donde-van-los-desechos-que-terminan-en-las-playas-y-mares</li>
-
+                 <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
+                <li>Limpieza de Málaga (2021).<em>Día Mundial de la Limpieza y de las Playas.</em>https://limpiezademalaga.es/dia-mundial-limpieza-y-playas/</li>
+                <li>SEMARNAT (2024). <em>¿A dónde van los desechos que terminan en las playas y mares?</em>. https://www.gob.mx/semarnat/articulos/a-donde-van-los-desechos-que-terminan-en-las-playas-y-mares</li>
             </ul>
         </div>
         

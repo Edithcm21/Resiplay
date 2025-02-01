@@ -21,7 +21,9 @@
                 </p>
                 <p>autores: {{$publicacion->autores}}<br>
                     fecha: {{$publicacion->fecha}}</p>
+                    {{-- <td><a href="{{ Storage::url($publicacion->file) }}" class="btn btn-sm btn-dark" target="_blank" style="width: 100%">Ver archivo</a></td> --}}
                     <td><a href="{{ Storage::url($publicacion->file) }}" class="btn btn-sm btn-dark" target="_blank" style="width: 100%">Ver archivo</a></td>
+
 {{-- 
                 <a href="{{ Storage::url($publicacion->file) }}" class="">
                 <button class=" btn-white btn-2">Ver archivo</button></a> --}}

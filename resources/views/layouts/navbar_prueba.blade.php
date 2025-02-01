@@ -1,23 +1,22 @@
 
-<div id="navbar3" >
+<div id="navbar3" class="" >
 
-<div class=" header-top">
-  <div class="d-flex justify-content-start align-items-center me-2">
+<div class=" container-fluid p-0 m-0  row  d-flex">
+  <div class=" justify-content-start align-items-center pe-4 col-6 col-md-6  ">
       <img class="al img-fluid me-1" style="max-height: 90px;" src="{{ asset('images/Logo-ResiPlay.png') }}">
       <img class="mt-0 pt-0" src="{{asset('images/nombre.png')}}" alt="" style="height: 40px">
       {{-- <h3 class="fw-bold ">Resi<strong class=" text-red">Play</strong></h4> --}}
   </div>
-  <div class="buttons d-flex justify-content-end align-items-center">
-        
-    <a href="" class="nav-link">
-      <button type="button" class="btn-gray" > <i class="bi bi-question-circle-fill"> Ayuda</i> </button>
-      
+  <div class=" justify-content-end d-flex  align-items-center col-6 col-md-6 "> 
+    <span class="contador p-0 m-0">  <i class="bi bi-eye"> </i><span id="contador"> 001</span></span>
+  
+    
+    <a href="{{asset('archivos/Manual.pdf')}}" class="nav-link">
+      <button type="button" class="btn-gray btn " >  Ayuda</button>
     </a>
-      <div class="  " style="">
-          <a href="{{route('login')}}">
-              <button id="navbutton1" type="button" class="btn-red ">Iniciar sesión</button>
-          </a>
-      </div>
+    <a href="{{route('login')}}">
+      <button id="navbutton1" type="button" class="btn-red btn ">Iniciar sesión</button>
+    </a>
   </div>
 </div>
 <nav  class="navbar   navbar-expand-lg  navbar-dark1 " style="">
@@ -41,7 +40,7 @@
         </a>
         <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
           <li><a class="dropdown-item "  href="{{route('Monitoreos')}}">MONITOREOS</a></li>
-          <li><a class="dropdown-item "  href="{{route('Costas')}}">LAS PLAYAS</a></li>
+          <li><a class="dropdown-item "  href="{{route('Costas')}}">LAS PLAYAS DE MÉXICO</a></li>
           <li><a class="dropdown-item "  href="{{route('Residuos_playas')}}">RESIDUOS EN PLAYAS</a></li>
           <li><a class="dropdown-item" href="{{route('publicaciones')}}">Publicaciones</a></li>
         </ul>
@@ -56,7 +55,7 @@
 </nav>
 </div>
 
-  <nav id="navbar1" class="navbar navbar_inicio navbar-expand-lg border navbar-light navbar-hidden  fixed-top  row" >
+  {{-- <nav id="navbar1" class="navbar navbar_inicio navbar-expand-lg border navbar-light navbar-hidden  fixed-top  row" >
     <div class="container-fluid">
       <div class="d-flex col-sm-2 justify-content-center  me-2" >
         <img class="al img-fluid me-2 " style="max-height: 90px;" src="{{ asset('images/Logo-ResiPlay.png') }}">
@@ -106,4 +105,4 @@
   </nav>
 
 
-  
+   --}}

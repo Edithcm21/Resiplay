@@ -15,8 +15,9 @@
     <div class=" col-sm-10 mx-auto ">
         
         <div class="row">
+            <h1 class="fw-bold p-5">LAS PLAYAS DE MÉXICO,<span class="text-red">UN TESORO NATURAL</span></h1>
+
            <div class="col-md-8 ">
-            <h1 class="fw-bold">LAS PLAYAS DE MÉXICO,<span class="text-red">UN TESORO NATURAL</span></h1>
             <p class="text-normal">México es un país privilegiado que posee <strong>11,000 km de litoral</strong>, de los cuales
                 70% se encuentran en el Océano Pacífico y Golfo de California
                 mientras que el resto pertenece al Golfo de México y Mar Caribe. 
@@ -54,7 +55,7 @@
         <br><br>
         <div class="row  mb-4">
             <div class="col-md-12  mx-auto">
-                <h1 class=" fw-bold text-red text-center">LAS PLAYAS Y SU RELEVANCIA</h1>
+                <h1 class=" fw-bold text-red text-center">RELEVANCIA</h1>
                 <p class="text-normal text-center">Las playas son depósitos no estables de arena, piedras o rocas a lo largo del
                     litoral, formadas por la acumulación de sedimentos debido a la erosión de las
                     rocas y el suelo, así como la degradación de organismos marinos
@@ -64,7 +65,7 @@
         <div class="row mb-4">
             <div class="col-md-6 mx-auto mb-4">
                 <img src="{{asset('images/MapaRegiones.png')}}" alt="Regiones de Mexico" width="100%">
-                <p class="small text-center text-gray"> Figura 1. Regiones Marinas de México.</p>
+                {{-- <p class="small text-center text-gray"> Figura 1. Regiones Marinas de México.</p> --}}
             </div>
             <div class="col-md-6">
                 <p class="text-normal">Las playas de arena son uno de los ecosistemas costeros más relevantes para el país, tanto
@@ -112,7 +113,7 @@
             </div>
             <div class="col-sm-6 ">
                 <img src="{{asset('images/beneficios_playa.png')}}" width="100%" >
-                <p class="small text-center text-gray"> Figura 2. Beneficios que brindan las playas a la sociedad</p>
+                {{-- <p class="small text-center text-gray"> Figura 2. Beneficios que brindan las playas a la sociedad</p> --}}
             </div>
         </div>
         <br><br>
@@ -149,9 +150,9 @@
         <div class="referencias">
             <h2 style="color: #333;">Referencias</h2>
             <ul style="line-height: 1.6; padding-left: 20px;">
-                <li>Braskem Idesa, <em>Monitoreo y manejo de residuos en playas</em>. 2020. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
-                <li>https://www.cooperatingvolunteers.com/america/las-5-mejores-playas-mexico/</li>
-            </ul>
+                <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
+                <li>Seo, S. (2017). <em>Las 5 mejores playas de México. Cooperating Volunteers.</em> https://www.cooperatingvolunteers.com/america/las-5-mejores-playas-mexico/</li>
+               </ul>
         </div>
         
     </div>

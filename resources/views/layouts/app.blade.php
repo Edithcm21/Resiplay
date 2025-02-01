@@ -15,6 +15,7 @@
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/border.css') }}" rel="stylesheet">
     <link href="{{ asset('css/efectos.css') }}" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
 <body>
@@ -28,8 +29,10 @@
       </div>
       
     </main>
-  <footer>
+    <footer>
         <p>COPYRIGHT © 2024 UNIVERSIDAD VERACRUZANA</p>
+            
+       
     </footer>
 
     <!-- Bootstrap 5 JavaScript (Bundle includes Popper.js) -->

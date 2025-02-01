@@ -29,9 +29,9 @@
 <div class=" container ">
   <div class=" row">
     <div class="col-12 col-sm-7">
-      <h1 class="text-rojo text-center mb-4 fs-1 h1">Residuos Costeros</h1>
-      <p class="fade-in-text fs-5  ">Es una  plataforma que presenta 
-        los resultados de los muestreos realizados por investigadores 
+      <h1 class="text-rojo text-center mb-4 fs-1 h1">RESIPLAY</h1>
+      <p class="fade-in-text fs-5  ">RESIPLAY (Residuos sólidos en playas), es un sistema de Información Geográfico (SIG) que integra una base de datos
+        que gestiona los resultados de diversos muestreos realizados por investigadores 
         de la UAM Azcapotzalco, dedicados a monitorear la contaminación 
         por residuos sólidos en las playas mexicanas. A través de esta 
         herramienta, buscamos generar conciencia sobre la importancia de 

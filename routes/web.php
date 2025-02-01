@@ -58,6 +58,8 @@ Route::get('estados/{id_estado}', [MunicipioController::class, 'getMunicipios'])
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 //ruta para la logica del formulario
 Route::post('login', [LoginController::class, 'login']);
+//Ruta para mostrar el contador de vistas
+Route::get('vistas/{id}',[IndexController::class,'mostrar_vistas'])->name('vistas');
 
 
 
