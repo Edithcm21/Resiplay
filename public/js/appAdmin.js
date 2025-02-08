@@ -97,3 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+
+
+function submitFormPlayas() {
+    document.getElementById('FiltroPlayaForm').submit();
+}

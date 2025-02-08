@@ -36,6 +36,20 @@
               </div>
             </div>
             <div class="row">
+                <div class="col-sm-4 m-1 p-1 pb-0 mb-0">
+                    <form id="FiltroPlayaForm" method="get" action="{{route('admin.muestreos.show')}}" >
+                        <select  id="Selectplaya" class="form-select" name="id" onchange="submitFormPlayas()">
+                            <option value="0">Selecciona playa</option>
+                            @foreach ($playas as $playa)
+                          <option value="{{$playa->id_playa}}">{{ $playa->nombre_playa }}</option>
+                          @endforeach
+                            <option value="0">Todas</option>
+                        </select>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 mt-4 table-responsive">
                     <table class="table table-striped ">
                         <thead>

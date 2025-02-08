@@ -3,8 +3,11 @@
 
 <div class=" container-fluid p-0 m-0  row  d-flex">
   <div class=" justify-content-start align-items-center pe-4 col-6 col-md-6  ">
+    <a class="nav-link active" aria-current="page" href="/">
       <img class="al img-fluid me-1" style="max-height: 90px;" src="{{ asset('images/Logo-ResiPlay.png') }}">
       <img class="mt-0 pt-0" src="{{asset('images/nombre.png')}}" alt="" style="height: 40px">
+    </a>
+      
       {{-- <h3 class="fw-bold ">Resi<strong class=" text-red">Play</strong></h4> --}}
   </div>
   <div class=" justify-content-end d-flex  align-items-center col-6 col-md-6 "> 

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedInteger('fk_muestreo');
             $table->foreign('fk_muestreo')->references('id_muestreo')->on('muestreos');
             $table->unsignedInteger('cantidad');
-            $table->unsignedInteger('porcentaje');
+            $table->float('porcentaje',5,2);
             $table->timestamps();
             
         });

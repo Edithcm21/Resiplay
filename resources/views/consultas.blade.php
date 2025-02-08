@@ -81,7 +81,7 @@
     
               @foreach ($muestreosPorPlaya as $playaId => $muestreosDePlaya)
                   @php
-                      // Obtengo el primero nombre de esa playa
+                      // Obtengo primero  el nombre de esa playa
                       $nombrePlaya = $muestreosDePlaya->first()->playa->nombre_playa;
                       $totalMuestreos = $muestreosDePlaya->count();
                   @endphp

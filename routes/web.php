@@ -111,6 +111,8 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/admin/hallazgos/delete/{id}',[hallazgosController::class,'destroy'])->name('admin.hallazgos.delete');
         
         Route::get('/admin/muestreos',[muestreosController::class,'index'])->name('admin.muestreos');
+        Route::get('/admin/muestreos/show',[muestreosController::class,'show'])->name('admin.muestreos.show');
+
 
         Route::get('/admin/publicaciones',[publicacionesController::class,'index'])->name('admin.publicaciones');
         Route::post('/admin/publicaciones/create',[publicacionesController::class,'store'])->name('admin.publicaciones.store');

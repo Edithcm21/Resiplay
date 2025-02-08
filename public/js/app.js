@@ -163,3 +163,4 @@ document.addEventListener('DOMContentLoaded',function(){
     console.error('Error al mostrar el número de vistas',error);
   });
 });
+
