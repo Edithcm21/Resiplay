@@ -35,24 +35,29 @@
                                 <label class="label-control">Título dela publicaión</label>
                                 <textarea class="form-control" id="titulo" name="titulo" placeholder="Título de la publicación" required maxlength="100"></textarea>
                             </div>
-                            <div class=" col-sm-8 mb-3"  >
+                            <div class=" col-sm-6 mb-3"  >
                                 <label class="label-control">Descripción</label>
                                 <textarea class="form-control" placeholder="Descripción" id="descripcion" name="descripcion" maxlength="500" required></textarea>
                                 {{-- <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripción"  required maxlength="1000"> --}}
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class=" col-sm-4 mb-3" >
-                                <label class="label-control">Autores</label>
-                                <textarea  class="form-control" id="autores" name="autores" placeholder="autores"  required  maxlength="100"></textarea>
-                            </div>
-                            <div class=" col-sm-2 m-3" >
+                            <div class=" col-sm-2 mb-3" >
                                 <label class="label-control">Fecha de publicación</label>
                                 <input type="date" class="form-control mt-2" id="fecha" name="fecha" placeholder="Fecha de publicacion"  required>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-sm-3 mb-3" >
+                                <label class="label-control">Autores</label>
+                                <textarea  class="form-control" id="autores" name="autores" placeholder="autores"  required  maxlength="100"></textarea>
+                            </div>
+                            
                             <div class="col-sm-3 mt-3 ">
-                                <label for="archivo" class="form-label">Archivo</label> 
+                                <label for="archivo" class="form-label">Archivo pdf*</label> 
                                 <input type="file" class="form-control m-0" name="archivo" id="archivo" accept="application/pdf"  required>
+                            </div>
+                            <div class="col-sm-3 mt-3 ">
+                                <label for="portada" class="form-label">Portada (imagen)</label> 
+                                <input type="file" class="form-control m-0" name="portada" id="portada" accept="image/png, image/jpeg, image/jpg"  required>
                             </div>
                             <div class="col-sm-2 mt-4 " >
                                 <div class="mb-4"></div>
@@ -77,17 +82,20 @@
                                 <th>Autores</th>
                                 <th>Fecha de publicación</th>
                                 <th>Archivo</th>
+                                <th>Portada</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($publicaciones as $publicacion)
-                                <tr>
-                                <td>{{$publicacion->id}}</td>
+                                <tr class="align-middle">
+                                <td >{{$publicacion->id}}</td>
                                 <td>{{$publicacion->titulo}}</td>
                                 <td>{{$publicacion->descripcion}}</td>
                                 <td>{{$publicacion->autores}}</td>
                                 <td>{{$publicacion->fecha}}</td>
                                 <td><a href="{{ Storage::url($publicacion->file) }}" class="btn btn-sm btn-dark" target="_blank" style="width: 100%">Ver</a></td>
+                                
+                                <td><img src="{{Storage::url($publicacion->img)}}" alt="" style="max-width: 100px" class="img-fluid"></td>
                                 <td>
                                     <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal{{$publicacion->id}}" data-bs-id="{{$publicacion->id}}">Editar</button>
                                     <!-- Modal Edit -->
@@ -120,6 +128,10 @@
                                                             <div class="mb-3 ">
                                                                 <label for="modalArchivo" class="form-label">Archivo (Dejar en blanco sino desea cambiarlo)</label> 
                                                                 <input type="file" class="form-control" name="modalArchivo" id="modalArchivo" accept="application/pdf"  >
+                                                            </div>
+                                                            <div class="mb-3 ">
+                                                                <label for="modalimg" class="form-label">Imagen (Dejar en blanco sino desea cambiarlo)</label> 
+                                                                <input type="file" class="form-control" name="modalimg" id="modalimg" accept="image/png, image/jpeg, image/jpg"  >
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer  ">

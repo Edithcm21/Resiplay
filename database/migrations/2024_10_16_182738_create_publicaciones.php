@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('autores',100);
             $table->date('fecha');
             $table->string('file');
+            $table->string('img');
             $table->timestamps();
         });
     }

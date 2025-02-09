@@ -10,5 +10,5 @@ class publicacion extends Model
 {
     use HasFactory;
     protected $table = 'publicaciones';
-    protected $fillable = ['titulo','descripcion','autores','fecha','file'];
+    protected $fillable = ['titulo','descripcion','autores','fecha','file','img'];
 }

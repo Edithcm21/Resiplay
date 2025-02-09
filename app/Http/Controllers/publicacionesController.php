@@ -42,15 +42,18 @@ class publicacionesController extends Controller
                 'descripcion' => 'required|string|max:500',
                 'autores' => 'required|string|max:100',
                 'fecha' => 'date',
-                'archivo' => 'required|mimes:pdf'
+                'archivo' => 'required|mimes:pdf',
+                'portada'=>'required|mimes:jpg,jpeg,png|max:2048'
             ]);
             $filePath = $request->file('archivo') ->store('publicaciones','public');
+            $portadaPath=$request->file('portada')->store('img','public');
             $publicacion = new publicacion();
             $publicacion->titulo = $request->titulo;
             $publicacion->descripcion = $request->descripcion;
             $publicacion->autores= $request->autores;
             $publicacion->fecha=$request->fecha;
             $publicacion->file= $filePath;
+            $publicacion->img=$portadaPath;
             $publicacion->save();
 
             return Auth::user()->rol== 'admin' 
@@ -92,13 +95,20 @@ class publicacionesController extends Controller
                 'modalDescripcion' => 'required|string|max:500',
                 'modalAutores' => 'required|string|max:100',
                 'modalFecha' => 'date',
-                'modalArchivo' => 'nullable|mimes:pdf'
+                'modalArchivo' => 'nullable|mimes:pdf',
+                'modalimg'=>'nullable|mimes:jpg,jpeg,png|max:2048'
             ]);
             $publicacion = publicacion::findOrFail($id);
             if($request->hasFile('modalArchivo')){
                 $filePath = $request->file('modalArchivo') ->store('publicaciones','public');
                 $publicacion->file=$filePath;
             }
+            if($request->hasFile('modalimg')){
+                $portadaPath=$request->file('modalimg')->store('img','public');
+                $publicacion->img=$portadaPath;
+                
+            }
+
             $publicacion->titulo=$request->modalTitulo;
             $publicacion->descripcion=$request->modalDescripcion;
             $publicacion->autores= $request->modalAutores;
@@ -125,6 +135,7 @@ class publicacionesController extends Controller
         try {
             $publicacion= publicacion::findorFail($id);
             Storage::disk('public')->delete($publicacion->file);
+            Storage::disk('public')->delete($publicacion->img);
             $publicacion->delete();
 
             return Auth::user()->rol== 'admin' 
@@ -133,7 +144,7 @@ class publicacionesController extends Controller
 
         } catch (\Exception $e) {
             // Imprimir el error en el registro
-            Log::error('Error al eliminar usuario: ' . $e->getMessage());
+            Log::error('Error al eliminar el registro: ' . $e->getMessage());
 
             return Auth::user()->rol== 'admin' 
                 ? redirect()->route('admin.publicaciones')->with('error','Ocurrió un error al eliminar registro')

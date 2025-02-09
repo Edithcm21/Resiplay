@@ -400,8 +400,7 @@ footer {
     
 }
 .card-red{
-    background-color: var(--rojo);
-    color: var(--blanco);
+    border: 1px solid var(--rojo);
     margin: auto;
     padding: 4;
 }
