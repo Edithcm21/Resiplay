@@ -439,3 +439,11 @@ margin-bottom: 5px;
     padding-top: 0px;
    
   }
+
+.card-pdf{
+    text-decoration: none;
+
+}
+.card-pdf h3,h6{
+    color: #000000;
+}
