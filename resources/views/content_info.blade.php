@@ -15,16 +15,17 @@
   </div>
 </div> --}}
 
-{{-- <section id="banner">
+<section id="banner">
   <img src="{{ asset('images/Banner.jpg') }}" style="width:100%" alt="Descripción de la imagen">
  
-</section> --}}
-<div class="portada " style="height: 125vh">
-  <div class="" style="height: 92vh"></div> 
-  <div class="curva container-fluid p-0 m-0 " style="height: 50vh">
-    <img src="{{asset('images/curva.svg')}}" alt="" style="min-height: 100%; width:100%">
+</section>
+<div class="portada " >
+  <div class="contenido" style=""></div> 
+  <div class="curva  " style=" ">
+    <img src="{{asset('images/curva.svg')}}" alt="curva" >
   </div>
 </div>
+
 <br><br>
 <div class=" container ">
   <div class=" row">

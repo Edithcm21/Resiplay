@@ -36,10 +36,10 @@ class UsersController extends Controller
         try{
             // Validar los datos del formulario
             $request->validate([
-                'nombre' => 'required|string|max:255',
-                'correo' => 'required|string|email|unique:users,email',
+                'nombre' => 'required|string|max:40',
+                'correo' => 'required|string|email|unique:users,email|max:100',
                 'password' => 'required|string|min:8',
-                'rol' => 'required|in:admin,capturista', // Asegura que el rol sea uno de los valores permitidos
+                'rol' => 'required|in:admin,capturista|max:10', // Asegura que el rol sea uno de los valores permitidos
             ]);
             
             // Crear el usuario

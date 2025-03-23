@@ -22,7 +22,6 @@
           <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="{{route('admin.Playas')}}">Playas</a></li>
             <li><a class="dropdown-item" href="{{route('admin.municipios')}}">Municipios</a></li>
-            <li><a class="dropdown-item" href="{{route('admin.RegionMarina')}}">Region Marina</a></li>
             <li><a class="dropdown-item" href="{{route('admin.Tipo_residuos')}}">Residuos</a></li>
             <li><a class="dropdown-item" href="{{route('admin.Clasificacion')}}">Clasificación de residuos</a></li>
           </ul>

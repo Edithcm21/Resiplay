@@ -19,7 +19,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="{{route('capturista.Playas')}}">Playas</a></li>
             <li><a class="dropdown-item" href="{{route('capturista.municipios')}}">Municipios</a></li>
-            <li><a class="dropdown-item" href="{{route('capturista.RegionMarina')}}">Region Marina</a></li>
             <li><a class="dropdown-item" href="{{route('capturista.Tipo_residuos')}}">Residuos</a></li>
             <li><a class="dropdown-item" href="{{route('capturista.Clasificacion')}}">Clasificación de residuos</a></li>
           </ul>

@@ -35,65 +35,42 @@ body{
   .n-transparent{
     background-color: rgba(1, 115,175, 0.5); 
   }
- /* .navbar_user{
-    position:fixed;
-    background-color:var(--blanco); 
-    width: 100%;
-    z-index: 1;
-    padding: 20px 0;
-    text-align: center;
-    color: var(--negro);
-    border-radius: 0 0 15px 15px;
-    font-family: "Cera Pro", Sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase; 
-} 
 
-.navbar_user .nav-link {
-    padding: 0 10px;
-}
-.navbar_user .navbar-nav .nav-item {
-    margin-right: 15px; 
-} */
 
 .espacio{
     margin-top: 25vh; 
     padding-top: 1rem ;  
 }
 
-/* .navbar_user a{
-    font-size: 1.2rem;
-    color: var(--negro);
-    padding: 0 10px;
-}
-.navbar_user a:hover{
-    color: var(--negro);
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-.navbar_user .active{
-    font-size: 1.1 rem;
-    color: var(--rojo);
-    font-style: italic; 
-}
-.navbar_user a.nav-link.active {
-    font-weight: bold;
-    color: var(--rojo);
-    border-bottom: 2px solid var(--rojo);
-}  */
-
-.portada{
+.portada {
     background-image: url("../images/Banner.jpg");
-    background-position:center; /* Centra la imagen*/
-    background-repeat: no-repeat; /*Evita que la imagen se repita*/
-  width: 100%;
-    background-color: var(--azul);
-    background-size: cover;
-    background-position:center center;
-   
-} 
+    background-repeat: no-repeat;
+    background-size: cover; /* La imagen cubre el contenedor */
+    background-position: center;
+    width: 100%;
+    position: relative; /* Necesario para posicionar la curva */
+}
+
+/* @media (max-width: 768px) {
+    .portada {
+        height: 50vh; 
+    }
+} */
+
+.curva {
+    width: 100%;
+    position: absolute; /* Fija la curva al final de .portada */
+    bottom: 0;
+    left: 0;
+}
+
+.curva img {
+    width: 100%;
+    display: block;
+}
+
+
+
 .contenido_portada {
     color:var(--blanco);
     font-weight: bold; 
@@ -106,15 +83,14 @@ body{
 
 }
 
-.video-background {
+/* .video-background {
     position: relative;
     height: 130vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye los elementos */
-  }
-  
+    justify-content: space-between; 
+  } 
   .background-video {
     position: absolute;
     top: 50%;
@@ -126,7 +102,7 @@ body{
     z-index: -1;
     background-color: var(--azul);
     transform: translate(-50%, -50%);
-  }
+  } */
 
   .mapa{
     /* box-shadow: 5px 15px 20px rgba(0, 0, 0, 1); /* Sombra de la imagen */
@@ -401,6 +377,8 @@ footer {
 }
 .card-red{
     border: 1px solid var(--rojo);
+    background-color: var(--rojo);
+    color: var(--blanco);
     margin: auto;
     padding: 4;
 }

@@ -31,14 +31,14 @@
                     <form class="row mb-3"method="POST" action="{{route('admin.usuarios.store')}}">
                         @csrf
                         <div class=" col-sm-3 mb-3" >
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required maxlength="40">
                         </div>
                         <div class=" col-sm-3 mb-3"  >
-                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico"  required>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" maxlength="100"  required>
                         </div>
                         
                         <div class=" col-sm-2 mb-3" >
-                            <input type="text" class="form-control" id="password" name="password" placeholder="password"  required  minlength="8" >
+                            <input type="text" class="form-control" id="password" name="password" placeholder="password"  required  minlength="8" maxlength="20" >
                         </div>
                         <div class=" col-sm-2 mb-3 " >
                             <select  class="form-select " name="rol"   required >
@@ -91,15 +91,15 @@
                                               @csrf @method('PUT')
                                               <div class="mb-3">
                                                 <label  class="form-label">Nombre</label>
-                                                <input type="text" class="form-control"  name="modalName" placeholder="Nombre" required value="{{$usuario->name}}">
+                                                <input type="text" class="form-control"  name="modalName" placeholder="Nombre" required value="{{$usuario->name}}" maxlength="40">
                                               </div>
                                               <div class="mb-3 ">
                                                 <label for="modalCorreo" class="form-label">Correo</label>
-                                                <input type="email" class="form-control"  name="modalCorreo" placeholder="Correo electrónico"  required value="{{$usuario->email}}">
+                                                <input type="email" class="form-control"  name="modalCorreo" placeholder="Correo electrónico"  required value="{{$usuario->email}}" maxlength="100">
                                               </div>
                                               <div class="mb-3 ">
                                                 <label for="modalPassword" class="form-label">Contraseña</label> 
-                                                <input type="text" class="form-control" name="modalPassword" id="modalPassword" placeholder="si no deseas editar dejar en blanco" value="">
+                                                <input type="text" class="form-control" name="modalPassword" id="modalPassword" placeholder="si no deseas editar dejar en blanco" value="" minlength="8" maxlength="20">
                                               </div>
                                               <div class="mb-3 ">
                                                 <label for="modalRol" class="form-label">Rol de usuario</label>
