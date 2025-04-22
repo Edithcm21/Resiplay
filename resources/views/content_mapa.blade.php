@@ -1,7 +1,7 @@
 
-<div class="container-fluid mapa" id="map" ></div>
-<!-- Modal -->
-
+<div class="container-fluid mapa" id="map" >
+  <br><br>
+</div>
 <script>
   window.puntos = @json($puntos);
 </script>

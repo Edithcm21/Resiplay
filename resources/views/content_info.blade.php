@@ -27,7 +27,7 @@
 </div>
 
 <br><br>
-<div class=" container ">
+<div class=" container " style="box-shadow:0px 10px 10px rgba(0, 0, 0, 0.2);">
   <div class=" row">
     <div class="col-12 col-sm-7">
       <h1 class="text-rojo text-center mb-4 fs-1 h1">RESIPLAY</h1>
@@ -44,7 +44,34 @@
     </div>
     <div class="col-12 col-sm-5 ">
       <img src="" >
-      <img src="{{ asset('images/Muestreo-tuxpan.png') }}" style="width: 100%" alt="equipo de investigadores en muestreo Tuxpan, Ver" class="imagen-con-sombra imagen-fade-in">
+      {{-- <img src="{{ asset('images/Muestreo-tuxpan.png') }}" style="width: 100%" alt="equipo de investigadores en muestreo Tuxpan, Ver" class="imagen-con-sombra imagen-fade-in"> --}}
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{ asset('images/Muestreo-tuxpan.png') }}" class="d-block w-100 imagen-con-sombra imagen-fade-in" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/c4.png') }}" class="d-block w-100 imagen-con-sombra imagen-fade-in" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/c6.png') }}" class="d-block w-100 imagen-con-sombra imagen-fade-in" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     
   </div>

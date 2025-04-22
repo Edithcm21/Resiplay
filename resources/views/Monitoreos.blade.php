@@ -307,8 +307,11 @@
         <div class="referencias">
             <h2 style="color: #333;">Referencias</h2>
             <ul style="line-height: 1.6; padding-left: 20px;">
-                 <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
-                <li>Limpieza de Málaga (2021).<em>Día Mundial de la Limpieza y de las Playas.</em>https://limpiezademalaga.es/dia-mundial-limpieza-y-playas/</li>
+                <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>.
+                    <a style="color:black; text-decoration:none"
+                     href="https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.">
+                     https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/...</a></li>
+                 <li>Limpieza de Málaga (2021).<em>Día Mundial de la Limpieza y de las Playas.</em>https://limpiezademalaga.es/dia-mundial-limpieza-y-playas/</li>
                 <li>SEMARNAT (2024). <em>¿A dónde van los desechos que terminan en las playas y mares?</em>. https://www.gob.mx/semarnat/articulos/a-donde-van-los-desechos-que-terminan-en-las-playas-y-mares</li>
             </ul>
         </div>

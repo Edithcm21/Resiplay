@@ -36,6 +36,7 @@ Route::get('/resultados/{id}',[IndexController::class,'showResultados'])->name('
 // Route::post('resultados/filtro',[IndexController::class,'showFilteredResults1'])->name('resultados.filtro');
 Route::post('consulta/filtro',[IndexController::class,'showFilteredResults'])->name('consulta.filtro');
 Route::get('consulta',[IndexController::class,'showFilteredResults'])->name('consulta');
+Route::get('consulta/muestreo/{id}',[IndexController::class,'showmuestreoid'])->name('consulta.muestreo');
 Route::get('Integrantes', function(){
     return view('Integrantes');
 })->name('Integrantes');

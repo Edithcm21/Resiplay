@@ -253,9 +253,8 @@ class hallazgosController extends Controller
         ->where('fk_muestreo',$id)
         ->orderBy('nombre_clasificacion')
         ->get();
-        $autorizado=$muestreo->autorizado == 1 ? 'Habilitado' : 'Desabilitado';
         $clasificaciones= Clasificacion::orderBy('nombre_clasificacion')->get();
-
+     
         return Auth::user()->rol == 'admin'
                 ? view('views_admin.muestreos.hallazgos',compact('muestreo','hallazgos','autorizado','clasificaciones'))
                 : view('views_capturista.muestreos.hallazgos',compact('muestreo','hallazgos','autorizado','clasificaciones'));

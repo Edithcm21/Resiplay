@@ -104,12 +104,14 @@
 </div>
 <div class="container-fluid row p-5">
 
-        <div class="referencias">
+        <div class="  col-md-12 col-12 referencias border p-3">
             <h2 style="color: #333;">Referencias</h2>
             <ul style="line-height: 1.6; padding-left: 20px;">
-                <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>. https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf.</li>
+                <li>Cruz Salas, A., Vázquez, A., & Álvarez, J. C. (2020). <em>Monitoreo y manejo de residuos en playas</em>.
+                    <a style="color:black; text-decoration:none" href="https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/343486111_Monitoreo_y_manejo_de_residuos_en_playas/links/5f2c9a21458515b7290ace73/Monitoreo-y-manejo-de-residuos-en-playas.pdf."> https://www.researchgate.net/profile/Arely-Cruz-Salas/publication/...</a></li>
                 <li>El Testigo (2024).<em>Es obligatorio para los países disminuir el nivel de contaminación en el entorno marino.</em> https://eltestigo.do/es-obligatorio-para-los-paises-disminuir-el-nivel-de-contaminacion-en-el-entorno-marino</li>
-                <li>Microplasticosambiente (2021).<em>Contaminación MARINA. Residuos, Plásticos y Microplásticos.</em> https://plasticosresiduosymicroplasticos.com/2021/08/09/contaminacion-marina/</li>
+                <li>Microplasticosambiente (2021).<em>Contaminación MARINA. Residuos, Plásticos y Microplásticos.</em>
+                    <a style="color:black; text-decoration:none" href="https://plasticosresiduosymicroplasticos.com/2021/08/09/contaminacion-marina/"></a> https://plasticosresiduosymicroplasticos.com/...</li>
                 <li>Mortimer, V. (2022).<em>Plástico: el residuo que más aparece en las playas. Bioguia.</em> https://www.bioguia.com/ambiente/residuo-playa_70018780.html</li>
                 <li>National Geographic (2023).<em>¿Cuáles son las playas más contaminadas de México. ?</em>https://www.nationalgeographicla.com/medio-ambiente/2023/03/cuales-son-las-playas-mas-contaminadas-de-mexico</li>
                 <li>SEMARNAT (2024).<em>¿A dónde van los desechos que terminan en las playas y mares?</em>. https://www.gob.mx/semarnat/articulos/a-donde-van-los-desechos-que-terminan-en-las-playas-y-mares</li>

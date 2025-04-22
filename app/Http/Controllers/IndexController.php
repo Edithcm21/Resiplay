@@ -167,5 +167,26 @@ class IndexController extends Controller
         
     return view('consultas',compact('playas','hallazgos','muestreos','residuos','clasificaciones','num_muestreos','zonas'));
     }
+
+
+    public function showmuestreoid($id){
+        // muestra todos los residuos encontrados en el muestreo seleccionado
+        $muestreo=muestreo::where('id_muestreo',$id)->first();
+        $hallazgos= DB::table('hallazgos')
+        ->select('cantidad','porcentaje','nombre_tipo','id_clasificacion')
+        ->join('muestreos' ,'id_muestreo', '=', 'fk_muestreo')
+        ->join('tipo_residuos','id_tipo', '=', 'fk_tipo')
+        ->join('clasificaciones','id_clasificacion','=','fk_clasificacion')
+        ->where('fk_muestreo',$id)
+        ->orderBy('nombre_clasificacion')
+        ->get();
+        $autorizado=$muestreo->autorizado == 1 ? 'Habilitado' : 'Desabilitado';
+        $clasificaciones= Clasificacion::orderBy('nombre_clasificacion')->get();
+     
+        return view('consulta_muestreo',compact('muestreo','hallazgos','clasificaciones'));
+   
+        
+
+    }
   
 }

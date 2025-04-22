@@ -91,11 +91,19 @@
               @endforeach
           </tr>
             
-            <tr class="border">
-              @foreach ($muestreos as $muestreo )
-              <th class="border " colspan="2">día: {{$muestreo->dia}}<br> año: {{$muestreo->anio}}  <br>zona: {{$muestreo->zona}}</th>
-              @endforeach
-            </tr>
+              <tr class="border " >
+                @foreach ($muestreos as $muestreo )
+                
+                <th class="border fmuestreo" colspan="2">
+                  <a href="{{route('consulta.muestreo',$muestreo->id_muestreo)}}" >
+                    día: {{$muestreo->dia}}<br> 
+                    año: {{$muestreo->anio}}<br>
+                    zona: {{$muestreo->zona}}
+                  </a>
+                  </th>
+                
+                @endforeach
+              </tr>
             <tr class="border">
               @foreach ($muestreos as $muestreo )
               <th class="border" colspan="2"># de muestreo: {{$muestreo->num_muestreo}}</th>

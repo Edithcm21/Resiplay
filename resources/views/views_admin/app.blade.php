@@ -28,7 +28,7 @@
         </div>
     </main>
 
-  <footer style="min-height: 10vh">
+  <footer class="p-3" style="min-height: 10vh">
         <p>COPYRIGHT © 2024 UNIVERSIDAD VERACRUZANA</p>
         
         

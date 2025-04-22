@@ -11,7 +11,7 @@
 <br>
 <div class="row container-fluid">
 
-    <div class="col-sm-10   mx-auto  card-team" >
+    <div class="col-sm-10   mx-auto  card-team" style="box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
         <h2 class="team-title text-center"> ¿Quiénes somos?</h2>
         <p class="  p-5 pt-3 pb-1 ">Somos un equipo multidisciplinario liderado por Alethia Vázquez Morillas,
              profesora e investigadora de la Universidad Autónoma Metropolitana (UAM) y miembro del 
@@ -41,7 +41,7 @@
 <br><br>
 <div class="row mx-auto text-center">
     <div class="col-sm-10 mx-auto text-center ">
-        <div class="row integrante-card p-2">
+        <div class="row integrante-card p-2" style="box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
             <div class="col-md-4 text-center mb-5 ">
                 <img src="{{asset('images/alethia.jpg')}}" alt="Nombre del integrante" class="border">   
             </div>
@@ -75,7 +75,8 @@
                 <a href="mailto:alethia@azc.uam.mx" class="email">alethia@azc.uam.mx</a><br>
             </div>
         </div>
-        <div class="row integrante-card p-2">
+        <br><br>
+        <div class="row integrante-card p-2" style="box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
             <div class="col-md-8 mb-5 text-center text-md-start ">
                 <h2>Dra. Arely Areanely Cruz Salas</h2>
                 <p class="description">
@@ -105,7 +106,8 @@
                 <img src="{{asset('images/arely.jpg')}}" alt="Nombre del integrante" class="border"> 
             </div>
         </div>
-        <div class="row integrante-card p-2">
+        <br><br>
+        <div class="row integrante-card p-2" style="box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
             <div class="col-md-4 text-center mb-5 ">
                 <img src="{{asset('images/JuanCarlos.jpg')}}" alt="Nombre del integrante" class="border"> 
             </div>
@@ -143,6 +145,7 @@
                 <a href="mailto:zeferinojuancarlos@gmail" class="email">; zeferinojuancarlos@gmail</a>
             </div>
         </div>
+        <br><br><br>
     </div>
 </div>
 
