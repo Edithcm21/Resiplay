@@ -7,7 +7,15 @@
 @endsection
 
 @section('content' )
+<div class="row p-4">
+    <div class="col-sm-2 mt-4 " >
+        <a href="{{route('consulta')}}" class="btn btn-dark"  style="width: 100%; ">
+            <i class="bi bi-arrow-left"></i> Regresar
+        </a>
+    </div>
+</div>
 <div class="row justify-content-center align-items-center p-4"  >
+    
     <div class="col-md-11 p-2 " style=" background-color:white;min-height: 74vh  " >
         {{-- <div class="container  " > --}}
             <div class="row centrarh">

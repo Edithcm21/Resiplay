@@ -133,16 +133,27 @@ footer {
     background: var(--negro);
     font-size: 15px;
 }
-footer a{
+/* footer a{
     text-decoration: none;
-    color: #a3a3a3;
+    color: #a3a3a3 !important;
     font-size: 13px;
-    
 
+  
+
+} */
+
+.email-link{
+    text-decoration: none;
+    color: #a3a3a3 !important;
+    font-size: 13px;
+} 
+.email-link hover{
+    color: var(--rojo) !important;
 }
-footer a:hover{
-    color: var(--rojo);
-}
+
+/* footer a:hover{
+    color: var(--rojo) !important;
+} */
 
 /* Login */
 .login{

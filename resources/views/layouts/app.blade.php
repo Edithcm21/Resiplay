@@ -37,10 +37,10 @@
                 <div class="col-sm-4 border-end mb-3 mb-sm-0">
                     <h5 class="fw-bold">Soporte</h5>
                     <p class="mb-1">Dra. Abigail Zamora Hernández <br>
-                        <a href="mailto:abzamora@uv.mx"><i class="bi bi-envelope-fill"></i> abzamora@uv.mx</a>
+                        <a class="email-link" href="mailto:abzamora@uv.mx"><i class="bi bi-envelope-fill"></i> abzamora@uv.mx</a>
                     </p>
                     <p class="mb-1">Edith Colorado Morales <br>
-                        <a href="mailto:zs19002924@estudiantes.uv.mx"><i class="bi bi-envelope-fill"></i> zs19002924@estudiantes.uv.mx</a>
+                        <a class="email-link" href="mailto:zs19002924@estudiantes.uv.mx"><i class="bi bi-envelope-fill"></i> zs19002924@estudiantes.uv.mx</a>
                     </p>
                 </div>
     
@@ -48,13 +48,13 @@
                 <div class="col-sm-4 border-end mb-3 mb-sm-0">
                     <h5 class="fw-bold">Contacto</h5>
                     <p class="mb-1">Dra. Alethia Vázquez Morillas <br>
-                        <a href="mailto:alethia@azc.uam.mx"><i class="bi bi-envelope-fill"></i> alethia@azc.uam.mx</a>
+                        <a class="email-link" href="mailto:alethia@azc.uam.mx"><i class="bi bi-envelope-fill"></i> alethia@azc.uam.mx</a>
                     </p>
                     <p class="mb-1">Dra. Arely Areanely Cruz Salas <br>
-                        <a href="mailto:areanelyc@gmail.com"><i class="bi bi-envelope-fill"></i> areanelyc@gmail.com</a>
+                        <a class="email-link" href="mailto:areanelyc@gmail.com"><i class="bi bi-envelope-fill"></i> areanelyc@gmail.com</a>
                     </p>
                     <p class="mb-1">Dr. Juan Carlos Alvarez Zeferino <br>
-                        <a href="mailto:jucaf@correo.azc.uam.mx"><i class="bi bi-envelope-fill"></i> jucaf@correo.azc.uam.mx</a>
+                        <a class="email-link" href="mailto:jucaf@correo.azc.uam.mx"><i class="bi bi-envelope-fill"></i> jucaf@correo.azc.uam.mx</a>
                     </p>
                 </div>
     
